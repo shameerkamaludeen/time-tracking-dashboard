@@ -1,0 +1,227 @@
+/* || Typography */
+
+body {
+    letter-spacing: 0.2px;
+    word-spacing: 0.8px;
+    font-weight: 400;
+    background-color: hsl(226, 43%, 10%);
+    font-family: 'Rubik', sans-serif;
+}
+
+h1 {
+    color: hsl(246, 80%, 60%); /* Blue */
+    color: hsl(15, 100%, 70%); /* Light red (work) */
+    color: hsl(195, 74%, 62%); /* Soft blue (play) */
+    color: hsl(348, 100%, 68%); /* Light red (study) */
+    color: hsl(145, 58%, 55%); /* Lime green (exercise) */
+    color: hsl(264, 64%, 52%); /* Violet (social) */
+    color: hsl(43, 84%, 65%); /* Soft orange (self care) */
+    /* Neutral */
+    color: hsl(226, 43%, 10%); /* Very dark blue */
+    color: hsl(235, 46%, 20%); /* Dark blue */
+    color: hsl(235, 45%, 61%); /* Desaturated blue */
+    color: hsl(236, 100%, 87%); /* Pale Blue */
+}
+
+.sec-dashboard .wr-card h3 {
+    font-size: 1.125rem;
+    color: white;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.sec-dashboard .wr-card.profile h2 {
+    font-weight: 300;
+    line-height: 1.4;
+}   
+
+.sec-dashboard .wr-card.profile h2 span:first-child {
+    color: hsl(236, 100%, 87%);
+    font-size: 1rem;
+}
+
+.sec-dashboard .wr-card.profile h2 span:last-child {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.sec-dashboard .wr-card .status span {
+    font-size: 1.875rem;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    line-height: 1;
+}
+
+.sec-dashboard .wr-card .prev-status span {
+    font-size: 0.875rem;
+    color: hsl(236, 100%, 87%);
+    font-weight: 300;
+}
+
+/* || Layout */
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    flex: 0;
+}
+
+/* || Section dashboard */
+
+.sec-dashboard {
+    width: 85.34%;
+    margin: 8em auto;
+    max-width: 34.5em;
+}
+
+.sec-dashboard .wr-card {
+    position: relative;
+    margin-bottom: 2.4em;
+}
+
+.sec-dashboard .wr-card .background, 
+.sec-dashboard .wr-card .foreground {
+    border-radius: 15px;
+}
+
+.sec-dashboard .wr-card .background {
+    height: 16em;
+}
+
+.sec-dashboard .wr-card .foreground {
+    background-color: hsl(235, 46%, 20%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 3.2em 2.4em;
+}
+
+.sec-dashboard .wr-card.profile .prof-status {
+    height: 20.4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 2.6em 3em;
+    border-radius: 15px;
+    background-color: hsl(235, 46%, 20%);
+}
+
+.sec-dashboard .wr-card.profile button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 1.125rem;
+    background: none;
+    color: hsl(235, 45%, 61%);
+    line-height: 1;
+}
+
+.sec-dashboard .wr-card.profile button.active {
+    color: white;
+}
+
+.sec-dashboard .wr-card.profile .prof-details {
+    display: flex;
+    padding: 3em;
+    align-items: center;
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 15px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 3em 2.4em;
+}
+
+.sec-dashboard .wr-card.profile .wr-profile-img img {
+    width: 7.2em;
+    height: 7.2em;
+    border: 3px solid white;
+    border-radius: 50px;
+    margin-right: 1.6em;
+}
+
+.sec-dashboard .wr-card.profile h2 {
+    margin: 0;
+}
+
+.sec-dashboard .wr-card.profile h2 span {
+    display: block;
+}
+
+.sec-dashboard .wr-card .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 1em;
+}
+
+.sec-dashboard .wr-card h3 {
+    margin: 0;
+}
+
+.sec-dashboard .wr-card .wr-img img {
+    height: 100%;
+}
+
+.sec-dashboard .wr-card .body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.sec-dashboard .wr-card.work .background {
+    background: url(../images/icon-work.svg) right 1.8em top -1em / auto no-repeat, hsl(15, 100%, 70%);
+}
+
+.sec-dashboard .wr-card.play .background {
+    background: url(../images/icon-play.svg) right 1.8em top -1em / auto no-repeat, hsl(195, 74%, 62%);
+}
+
+.sec-dashboard .wr-card.study .background {
+    background: url(../images/icon-study.svg) right 1.8em top -1em / auto no-repeat, hsl(348, 100%, 68%);
+}
+
+.sec-dashboard .wr-card.exercise .background {
+    background: url(../images/icon-exercise.svg) right 1.8em top -1em / auto no-repeat, hsl(145, 58%, 55%);
+}
+
+.sec-dashboard .wr-card.social .background {
+    background: url(../images/icon-social.svg) right 1.8em top -1em / auto no-repeat, hsl(264, 64%, 52%);
+}
+
+.sec-dashboard .wr-card.self-care .background {
+    background: url(../images/icon-self-care.svg) right 1.8em top -1em / auto no-repeat, hsl(43, 84%, 65%);
+}
+
+/* || Footer */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: hsl(236, 100%, 87%);
+    width: 85.34%;
+    margin: 0 auto;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
