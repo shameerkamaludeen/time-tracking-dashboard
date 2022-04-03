@@ -1,80 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Time tracking dashboard</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/systemize.css">
+  <link rel="stylesheet" href="styles/style.css">
+
+  <script src="scripts/main.js" defer></script>
 </head>
+
 <body>
+  <main>
+    <h1 class="hide-visually">Frontend Mentor - Time tracking dashboard solution</h1>
 
-  Report for
-  Jeremy Robson
+    <div class="sec-dashboard">
+      <div class="wr-card profile">
+        <div class="prof-details">
+          <div class="wr-profile-img">
+            <img src="images/image-jeremy.png" alt="Image of Jeremy">
+          </div>
 
-  Daily
-  Weekly
-  Monthly
+          <div class="wr-prof-details">
+            <h2><span>Report for</span><span>Jeremy Robson</span></h2>
+          </div>
+        </div>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+        <div class="prof-status">
+          <button class="daily active">Daily</button>
+          <button class="weekly">Weekly</button>
+          <button class="monthly">Monthly</button>
+        </div>
+      </div>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+      <div class="wr-stat-cards">
+        <div class="wr-card work">
+          <div class="foreground">
+            <div class="header">
+              <h3>Work</h3>
+              <div class="wr-img"><img src="images/icon-ellipsis.svg" alt="Three dots in horizontal"></div>
+            </div>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+            <div class="body">
+              <div class="status"><span></span></div>
+              <div class="prev-status"><span></span></div>
+            </div>
+          </div>
+        </div>
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
+        <div class="wr-card play">
+          <div class="foreground">
+            <div class="header">
+              <h3>Play</h3>
+              <div class="wr-img"><img src="images/icon-ellipsis.svg" alt="Three dots in horizontal"></div>
+            </div>
 
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
+            <div class="body">
+              <div class="status"><span></span></div>
+              <div class="prev-status"><span></span></div>
+            </div>
+          </div>
+        </div>
 
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
+        <div class="wr-card study">
+          <div class="foreground">
+            <div class="header">
+              <h3>Study</h3>
+              <div class="wr-img"><img src="images/icon-ellipsis.svg" alt="Three dots in horizontal"></div>
+            </div>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+            <div class="body">
+              <div class="status"><span></span></div>
+              <div class="prev-status"><span></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="wr-card exercise">
+          <div class="foreground">
+            <div class="header">
+              <h3>Exercise</h3>
+              <div class="wr-img"><img src="images/icon-ellipsis.svg" alt="Three dots in horizontal"></div>
+            </div>
+
+            <div class="body">
+              <div class="status"><span></span></div>
+              <div class="prev-status"><span></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="wr-card social">
+          <div class="foreground">
+            <div class="header">
+              <h3>Social</h3>
+              <div class="wr-img"><img src="images/icon-ellipsis.svg" alt="Three dots in horizontal"></div>
+            </div>
+
+            <div class="body">
+              <div class="status"><span></span></div>
+              <div class="prev-status"><span></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="wr-card self-care">
+          <div class="foreground">
+            <div class="header">
+              <h3>Self Care</h3>
+              <div class="wr-img"><img src="images/icon-ellipsis.svg" alt="Three dots in horizontal"></div>
+            </div>
+
+            <div class="body">
+              <div class="status"><span></span></div>
+              <div class="prev-status"><span></span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      <p>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+        <a href="https://twitter.com/ShameerKamalud1">Shameer Kamaludeen</a>.
+      </p>
+    </div>
+  </footer>
 </body>
+
 </html>
