@@ -5,22 +5,22 @@ let activeStatu = btnDaily;
 
 btnDaily.addEventListener('click', () => {
     updateDashboard('daily');
-    btnDaily.classList.add('active');
     activeStatu.classList.remove('active');
+    btnDaily.classList.add('active');
     activeStatu = btnDaily;
 });
 
 btnWeekly.addEventListener('click', () => {
     updateDashboard('weekly');
-    btnWeekly.classList.add('active');
     activeStatu.classList.remove('active');
+    btnWeekly.classList.add('active');
     activeStatu = btnWeekly;
 });
 
 btnMonthly.addEventListener('click', () => {
     updateDashboard('monthly');
-    btnMonthly.classList.add('active');
     activeStatu.classList.remove('active');
+    btnMonthly.classList.add('active');
     activeStatu = btnMonthly;
 });
 
